@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: rgba(74, 135, 163, 0.705);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.container {
+    margin-top: 30px;
+    border: 2px solid black;
+    width: 80%;
+}
+
+/* table setting */
+table {
+    background-color: rgba(0, 255, 255, 0.63);
+    width: 100%;
+}
+
+th {
+    border: 1px solid black;
+}
