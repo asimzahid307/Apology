@@ -168,6 +168,8 @@
 // // correct way
 // person1.work = () => "<p>Engineer</p>";
 
+// delete person1["fname"];
+
 // // getting data on web with DOM
 // document.getElementById("1").innerHTML = person1['fname'];
 // document.getElementById("2").innerHTML = person1['lname'];
@@ -177,6 +179,31 @@
 
 
 
+// // Nested object and its accessing
+// const car = {
+//     make: "Honda",
+//     model: "Civic",
+//     year: 2007,
+//     owners: {
+//         first: "Unknown",
+//         second: "Unknown",
+//         current: {
+//             status: "Transferred",
+//             data: {
+//                 from: "person 1",
+//                 to: "person 2",
+//             },
 
+//         },
+//     },
+
+// };
+
+
+// document.getElementById("1").innerHTML = car['make'];
+// document.getElementById("2").innerHTML = car['model'];
+// document.getElementById("3").innerHTML = car['year'];
+// document.getElementById("4").innerHTML = car['owners']['current']['status'];
+// document.getElementById("5").innerHTML = car.owners.current.data['to'];
 
 
