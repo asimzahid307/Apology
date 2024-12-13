@@ -19,7 +19,7 @@
 // let car = { make: "Honda", model: "Civic", year: "2007", color: "Silver" };
 
 // function guessCar(params) {
-    
+
 //     // let car = { make: "Honda", model: "Civic", year: "2007", color: "Silver" };
 
 //     if (car.make == "Honda") {
@@ -28,7 +28,7 @@
 //         console.log("No! Its a honda.")
 //     }
 // }
-        
+
 // let result = guessCar();
 //---------------------------------- SECTION NO 3 -------------------------------------------
 
@@ -84,5 +84,73 @@
 
 
 //------------------------------------------- SECTION NO 4 --------------------------------------
-// now testing nested object
+// now testing final results with objects
+
+// const person1 = {
+//     fname: "John",
+//     lname: "Doe",
+//     age: 25,
+//     email: "john@gmail.com",
+//     task: () => "<p>Engineer</p>",
+// }
+
+
+// const person2 = {
+//     fname: "Carry",
+//     lname: "Holmes",
+//     age: 22,
+//     email: "Carry@gmail.com",
+//     task: () => "<p>Consultant</p>",
+// }
+
+
+// const person3 = {
+//     fname: "Lara",
+//     lname: "Croft",
+//     age: 19,
+//     email: "lara@gmail.com",
+//     task: () => "<p>Assasin</p>",
+// }
+
+
+// const person4 = {
+//     fname: "Jones",
+//     lname: "Wick",
+//     age: 28,
+//     email: "jones@gmail.com",
+//     task: () => "<p>Actor</p>",
+// }
+
+
+// // getting data with DOM at web
+// // person 1 data
+// document.getElementById("1").innerHTML = person1['fname'];
+// document.getElementById("2").innerHTML = person1['lname'];
+// document.getElementById("3").innerHTML = person1['age'];
+// document.getElementById("4").innerHTML = person1['email'];
+// document.getElementById("5").innerHTML = person1.task();
+
+// // person 2 data
+// document.getElementById("6").innerHTML = person2['fname'];
+// document.getElementById("7").innerHTML = person2['lname'];
+// document.getElementById("8").innerHTML = person2['age'];
+// document.getElementById("9").innerHTML = person2['email'];
+// document.getElementById("10").innerHTML = person2.task();
+
+// // person 3 data
+// document.getElementById("11").innerHTML = person3['fname'];
+// document.getElementById("12").innerHTML = person3['lname'];
+// document.getElementById("13").innerHTML = person3['age'];
+// document.getElementById("14").innerHTML = person3['email'];
+// document.getElementById("15").innerHTML = person3.task();
+
+// // person 4 data
+// document.getElementById("16").innerHTML = person4['fname'];
+// document.getElementById("17").innerHTML = person4['lname'];
+// document.getElementById("18").innerHTML = person4['age'];
+// document.getElementById("19").innerHTML = person4['email'];
+// document.getElementById("20").innerHTML = person4.task();
+
+
+// cleared
 
