@@ -154,3 +154,29 @@
 
 // cleared
 
+// // Adding values after declaring an object
+// const person1 = {};
+
+// // Now add properties
+// person1['fname'] = "John";
+// person1['lname'] = "doe";
+// person1['age'] = 20;
+// person1['email'] = "john@gmail.com";
+// // Focus
+// // person1.work() = "<p>Engineer</p>"; // Wrong
+
+// // correct way
+// person1.work = () => "<p>Engineer</p>";
+
+// // getting data on web with DOM
+// document.getElementById("1").innerHTML = person1['fname'];
+// document.getElementById("2").innerHTML = person1['lname'];
+// document.getElementById("3").innerHTML = person1['age'];
+// document.getElementById("4").innerHTML = person1['email'];
+// document.getElementById("5").innerHTML = person1.work();
+
+
+
+
+
+
