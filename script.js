@@ -206,4 +206,25 @@
 // document.getElementById("4").innerHTML = car['owners']['current']['status'];
 // document.getElementById("5").innerHTML = car.owners.current.data['to'];
 
+// --------------------------------------------------------- Section no 5 -------------------------------
+
+// Object Constructors
+function Person(first, last, age) {
+    this.fname = first;
+    this.lname = last;
+    this.age = age;
+}
+
+
+// Now creating new objects using constructor function
+const person1 = new Person("John", "doe", 20);
+const person2 = new Person("Lara", "croft", 25);
+
+document.getElementById("1").innerHTML = person1['fname'];
+document.getElementById("2").innerHTML = person1['lname'];
+document.getElementById("3").innerHTML = person1['age'];
+
+document.getElementById("4").innerHTML = person2['fname'];
+document.getElementById("5").innerHTML = person2['lname'];
+document.getElementById("6").innerHTML = person2['age'];
 
