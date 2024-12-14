@@ -269,24 +269,43 @@
 
 // ----------------------------------------------- Section no 7 --------------------------------------
 
-// Creating constructor object fuction and assigning new property wusing prototype
-function Person(first , last) {
-    this.fname = first,
-    this.lname = last
-}
+// Creating constructor object fuction and assigning new property using prototype
+// function Person(first , last) {
+//     this.fname = first,
+//     this.lname = last
+// }
 
-// adding a property using prototype
-Person.prototype.gender = "Male";
+// // adding a property using prototype
+// Person.prototype.gender = "Male";
 
-// adding a method (Function) using prototype
-// Person.prototype.fullName = () => this.fname + " " + this.lname;
-Person.prototype.fullname = function () {
-    return this.fname + " " + this.lname;
-}
+// // adding a method (Function) using prototype
+// // Person.prototype.fullName = () => this.fname + " " + this.lname;
+// Person.prototype.fullname = function () {
+//     return this.fname + " " + this.lname;
+// }
 
-const person1 = new Person("John" , "Doe", "male");
+// const person1 = new Person("John" , "Doe", "male");
 
 
 
-console.log(person1['gender'])
-console.log(person1.fullname())
+// console.log(person1['gender'])
+// console.log(person1.fullname())
+
+
+// ----------------------------------------------- Section no 8 --------------------------------------
+// Adding different prototype values to check output
+// function Person(first , last) {
+//     this.fname = first,
+//     this.lname = last
+// }
+
+// Person.prototype = {age: 20};
+
+// const person1 = new Person("John" , "Doe");
+
+// Person.prototype = {age: 55};
+
+// const person2 = new Person("Lara" , "Croft");
+
+// console.log(person1.age);
+// console.log(person2.age);
