@@ -209,22 +209,84 @@
 // --------------------------------------------------------- Section no 5 -------------------------------
 
 // Object Constructors
-function Person(first, last, age) {
-    this.fname = first;
-    this.lname = last;
-    this.age = age;
+// function Person(first, last, age) {
+//     this.fname = first;
+//     this.lname = last;
+//     this.age = age;
+//     // Default value
+//     this.country = "Pakistan";
+// }
+
+
+// // Now creating new objects using constructor function
+// const person1 = new Person("John", "doe", 20);
+// const person2 = new Person("Lara", "croft", 25);
+
+// // Adding a property to an object
+// // By doing this new property will be added to just custom object, not on all objects
+// person1.nationality = "Pakistani";
+
+// document.getElementById("1").innerHTML = person1['fname'];
+// document.getElementById("2").innerHTML = person1['lname'];
+// document.getElementById("3").innerHTML = person1['age'];
+// document.getElementById("3a").innerHTML = person1['country'];
+// document.getElementById("3b").innerHTML = person1['nationality'];
+
+// document.getElementById("4").innerHTML = person2['fname'];
+// document.getElementById("5").innerHTML = person2['lname'];
+// document.getElementById("6").innerHTML = person2['age'];
+// document.getElementById("6a").innerHTML = person2['country'];
+// document.getElementById("6b").innerHTML = person2['nationality'];
+
+
+// ------------------------------------------------------- Section no 6 ---------------------------
+// Construct object function and add method (function)
+// function Person(first, last) {
+//     this.fname = first,
+//     this.lname = last,
+//     this.fullName = () => this.fname + " " + this.lname;
+// }
+
+// const person1 = new Person("John", "Doe");
+
+// // console.log(person1.fname);
+// // console.log(person1.lname);
+
+// // console.log(person1.fullName())
+
+// // Creating a method for changing name
+// // person1.changeName = (name) => this.fname = name;
+
+// person1.changeName = function (name) {
+//     this.fname = name;
+// }
+
+
+// // Now using method
+// person1.changeName("Aberama");
+
+// console.log(person1.fullName())
+
+// ----------------------------------------------- Section no 7 --------------------------------------
+
+// Creating constructor object fuction and assigning new property wusing prototype
+function Person(first , last) {
+    this.fname = first,
+    this.lname = last
 }
 
+// adding a property using prototype
+Person.prototype.gender = "Male";
 
-// Now creating new objects using constructor function
-const person1 = new Person("John", "doe", 20);
-const person2 = new Person("Lara", "croft", 25);
+// adding a method (Function) using prototype
+// Person.prototype.fullName = () => this.fname + " " + this.lname;
+Person.prototype.fullname = function () {
+    return this.fname + " " + this.lname;
+}
 
-document.getElementById("1").innerHTML = person1['fname'];
-document.getElementById("2").innerHTML = person1['lname'];
-document.getElementById("3").innerHTML = person1['age'];
+const person1 = new Person("John" , "Doe", "male");
 
-document.getElementById("4").innerHTML = person2['fname'];
-document.getElementById("5").innerHTML = person2['lname'];
-document.getElementById("6").innerHTML = person2['age'];
 
+
+console.log(person1['gender'])
+console.log(person1.fullname())
