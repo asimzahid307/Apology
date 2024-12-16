@@ -309,3 +309,19 @@
 
 // console.log(person1.age);
 // console.log(person2.age);
+
+// ---------------------------------------------- Section no 9 ---------------------------
+// review learning
+function Car(carmake , caryear) {
+    this.make = carmake,
+        this.year = caryear
+}
+
+// add property
+Car.prototype = { status: "Sold!" }
+
+const car1 = new Car("Honda" , 2007);
+
+console.log(car1['make']);
+console.log(car1['year']);
+console.log(car1['status']);
