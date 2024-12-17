@@ -312,16 +312,55 @@
 
 // ---------------------------------------------- Section no 9 ---------------------------
 // review learning
-function Car(carmake , caryear) {
-    this.make = carmake,
-        this.year = caryear
-}
+// function Car(carmake , caryear) {
+//     this.make = carmake,
+//     this.year = caryear
+// }
 
-// add property
-Car.prototype = { status: "Sold!" }
+// // add property
+// Car.prototype = { status: "Sold!" }
 
-const car1 = new Car("Honda" , 2007);
+// const car1 = new Car("Honda" , 2007);
 
-console.log(car1['make']);
-console.log(car1['year']);
-console.log(car1['status']);
+// console.log(car1['make']);
+// console.log(car1['year']);
+// console.log(car1['status']);
+
+// ---------------------------------------------- Section no 10 ---------------------------
+// Arrays
+// const car1 = "Honda";
+// const car2 = "Toyota";
+// const car3 = "Suzuki";
+
+// // console.log(car1,car2,car3)
+
+// const car = ["Honda", "Toyota", "Suzuki"];
+
+// // console.log(car[0] , car[1] , car[2])
+
+
+// const person = [];
+
+// // adding persons
+// person[0] = "John";
+// person[1] = "Doe";
+// // another type of variable
+// person[2] = 20;
+
+// // console.log(person[0], person[1], person[2])
+
+// // custom object to check array.isArray and instanceof
+// const cars = { make: "Honda", model: "Civic", year: 2007 };
+
+// // Checking array if it is array or not
+// console.log(Array.isArray(cars))
+// console.log(Array.isArray(person))
+
+// // using instance
+// console.log(cars instanceof Array)
+// console.log(cars instanceof Object)
+
+// console.log(person instanceof Array)
+// console.log(person instanceof Object)
+
+
